@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Onyx';
+  src: url('./fonts/Onyx.otf') format('opentype'),
+       url('./fonts/Onyx.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
-    font-family: "Eagle Lake", serif;
+    font-family: "Onyx";
     font-weight: 400;
     font-style: normal;
     color: #ff0000;
