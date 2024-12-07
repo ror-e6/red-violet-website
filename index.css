@@ -50,36 +50,33 @@ h1 {
 }
 
 .nav {
-    display: flex;
-    align-items: center;
     color: #F5F1E9;
-    border-bottom: #F5F1E9 solid 1px;
+    border-bottom: #F5F1E9 solid 3px;
+    align-items: center;
+    display: flex;
+}
+
+.nav .links {
+    display: flex;
+    padding: 15px 0;
 }
 
 .nav a {
     font-family: 'Jaini';
     font-size: 2em;
     color: #F5F1E9;
-    padding: 10px 10px 0 10px;
+    padding: 10px 20px;
     text-decoration: none;
-    max-width: 50%;
-
+    display: inline-block;
 }
 
-.links {
-    flex: 1;
-}
-
-.logo {
-    max-width: 50%;
-    flex: 1;
+.nav .logo {
     display: flex;
-
+    justify-content: center;
 }
 
-.logo img {
+.nav img {
     max-width: 80px;
-    max-height: 80px;
     height: auto;
 }
 
@@ -137,6 +134,11 @@ h1 {
     text-align: center; 
     vertical-align: middle;
     padding-top: 20px;
+}
+
+.gig1 a, .gig2 a{
+    text-decoration: none;
+    color: #EB3633;
 }
 
 .gig1 img, .gig2 img{
@@ -210,6 +212,8 @@ audio {
 @media (max-width: 480px) {
     h1 {
         font-size: 5em;
+        text-align: center;
+        padding: 0;
     }
 
     h2 {
@@ -223,7 +227,12 @@ audio {
     }
 
     .nav a {
-        font-size: 1.5em;
+        font-size: 1em;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .nav .links { 
+    padding: 2px 5px 2px 5px;
     }
 
     .logo img {
@@ -246,12 +255,12 @@ audio {
         height: auto;
     }
     .audioplayer {
-        margin: 30px;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         background: linear-gradient(to right, #da2323, #feb47b);
-        width: 40%;
+        opacity: 70%;
+        width: 67%;
         filter: drop-shadow(8px 8px 10px rgb(15, 15, 15));
         position: fixed;
         bottom: 0;
@@ -259,14 +268,20 @@ audio {
     }
     
     .audioplayer p {
-        padding: 2% 0 0 3%;
+        padding: 5% 0 0 5%;
         font-size: 12px;
-        line-height: 12px;
+        line-height: 14px;
+        text-align: left;
     }
     
     audio {
         height: 50px;
-        border-radius: 12px
+        border-radius: 12px;
+        padding-left: 2%;
+    }
+
+    .upcominggigs {
+        padding-bottom: 40px;
     }
 }
 
@@ -316,7 +331,6 @@ audio {
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: none;
     transition: flex 0.8s ease;
     transition-delay: 0.25s;
   }
