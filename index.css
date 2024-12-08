@@ -169,6 +169,7 @@ h1 {
 
 #location1 { cursor: pointer; }
 #location2 { cursor: pointer; }
+#poster { cursor: pointer; }
 
 .audioplayer p {
     padding: 0 0 0 3%;
