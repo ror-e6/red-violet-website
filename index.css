@@ -68,6 +68,11 @@ h1 {
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
+    z-index: 9999;
+}
+
+.nav a:hover {
+    color: #EB3633;
 }
 
 .nav .logo {
@@ -129,21 +134,24 @@ h1 {
     text-align: center;
 }
 
-.gig1, .gig2 {
+.gigs {
     text-align: center; 
     vertical-align: middle;
     padding-top: 20px;
     position: relative;
-    width: 50%;
+    max-width: 100%;
     padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    grid-gap: 20px;
 }
 
-.gig1 a, .gig2 a{
+.gigs a{
     text-decoration: none;
     color: #EB3633;
 }
 
-.gig1 img, .gig2 img{
+.gigs img{
     max-width: 50%;
     height: auto;
     filter: drop-shadow(8px 8px 10px rgb(15, 15, 15));
