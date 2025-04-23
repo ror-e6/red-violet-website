@@ -45,6 +45,13 @@ h2 {
     color: #F5F1E9;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 4em;
+  font-family: 'Jaini';
+  color: #F5F1E9;
+}
+
 .content h2 {
     margin-left: 2%;
 
@@ -120,7 +127,7 @@ main {
     text-align: center;
 }
 
-.socialmedia h2, .streaming h2 {
+.socialmedia h3, .streaming h3 {
     margin: 0 auto;
 }
 
