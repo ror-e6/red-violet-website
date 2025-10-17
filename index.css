@@ -114,6 +114,7 @@ main {
     height: auto;
     filter: drop-shadow(8px 8px 10px rgb(15, 15, 15));
     display: flex;
+    margin: 0 1.5em 0 0;
 }
 
 .externallinks {    
@@ -131,14 +132,11 @@ main {
     margin: 0 auto;
 }
 
-.socialmedia a, .streaming a {
+.fa-brands, .fa-solid {
     display: inline-block;
     margin: 20px 10px 20px 10px;
-}
-
-.socialmedia img, .streaming img{
-    max-width: 80px;
-    height: auto;
+    font-size: 4em;
+    color: #EB3633;
 }
 
 .upcominggigs {    
@@ -159,7 +157,7 @@ main {
     grid-gap: 20px;
 }
 
-.gigs a{
+a {
     text-decoration: none;
     color: #EB3633;
 }
@@ -238,9 +236,9 @@ main {
             margin: 10px 0;
         }
         
-        .socialmedia img, .streaming img{
-            max-width: 30px;
-            height: auto;
+        .fa-brands, .fa-solid {
+          font-size: 2em;
+          color: #EB3633;
         }
     
         .gigs {
@@ -329,9 +327,9 @@ main {
         margin: 10px 0;
     }
     
-    .socialmedia img, .streaming img{
-        max-width: 30px;
-        height: auto;
+    .fa-brands, .fa-solid {
+      font-size: 2em;
+      color: #EB3633;
     }
 
     .gigs {
@@ -469,6 +467,11 @@ main {
     .album .img.img-last {
       margin: 0 0 5px 0;
     }
+
+    .socialmedia h3, .streaming h3 {
+    margin: 0 auto;
+    font-size: 2em;
+}
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
